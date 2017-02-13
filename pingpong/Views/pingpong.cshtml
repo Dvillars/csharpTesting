@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PING PANG</title>
+    </head>
+    <body>
+        <div id="PingPongOutput">
+            @for(var i=1;i<=@Model.GetCountTo();i++)
+            {
+                <li>@Model.PingPongFilter(i)</li>
+            }
+        </div>
+        <a href = "/"><button type="button">Home</button></a>
+    </body>
+</html>
