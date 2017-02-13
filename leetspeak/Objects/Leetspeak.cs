@@ -33,12 +33,12 @@ namespace LeetSpeakTranslator.Objects
 
         public string Translate(string phrase)
         {
-            char[] holder = phrase.ToCharArray();
-            foreach(char c in cipher.Keys)
+            string holder = phrase;
+            foreach (KeyValuePair<string, string> x in cipher)
             {
-                var pattern = "\b" + c + "\b";
-                
+                holder = holder.Replace(x.Key, x.Value);
             }
+            return holder;
         }
     }
 }

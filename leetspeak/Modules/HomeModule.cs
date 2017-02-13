@@ -16,8 +16,7 @@ namespace LeetSpeakTranslator
             Post["/translate"] = _ =>
             {
                 LeetSpeak newPhrase = new LeetSpeak(Request.Form["phrase"]);
-                // newPhrase.Translate(newPhrase.GetPhrase());
-                return View["translated.cshtml", newPhrase];
+                return View["translated.cshtml", newPhrase.Translate(newPhrase.GetPhrase())];
             };
 
         }
