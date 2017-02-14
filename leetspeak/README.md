@@ -21,7 +21,9 @@ uses previous, replaces I (just cap) with 1
 uses previous, replaces s with z (not first letter)
 - input: Sassy
 - output: Sazzy
+- input: Bob sits
+- output: B0b sitz
 
 uses previous, handles sentence strings
--"Don't you love these 'String' exercises? I do!"
--"D0n't y0u l0v3 th3z3 'String' 3x3rciz3z? 1 d0!"
+- "Don't you love these 'String' exercises? I do!"
+- "D0n't y0u l0v3 th3z3 'String' 3x3rciz3z? 1 d0!"

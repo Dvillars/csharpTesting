@@ -47,6 +47,12 @@ namespace LeetSpeakTranslator.Objects
             Assert.Equal("Sazzy", testLeetSpeak.Translate("Sassy"));
         }
         [Fact]
+        public void Replaces_NotFirstS_z()
+        {
+            LeetSpeak testLeetSpeak = new LeetSpeak("Bob sits");
+            Assert.Equal("B0b sitz", testLeetSpeak.Translate("Bob sits"));
+        }
+        [Fact]
         public void Replaces_Sentence_Leetspeak()
         {
             LeetSpeak testLeetSpeak = new LeetSpeak("Don't you love these 'String' exercises? I do!" );
